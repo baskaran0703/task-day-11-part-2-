@@ -1,0 +1,67 @@
+/* Add general styles for the page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the banner container */
+.banner {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 50%; /* Adjust the aspect ratio of the banner here */
+    background-image: url('banner-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style the banner content */
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.banner-content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.banner-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Add media queries for responsive design */
+@media (max-width: 768px) {
+    .banner-content {
+        width: 90%;
+    }
+    
+    .banner-content h1 {
+        font-size: 24px;
+    }
+    
+    .banner-content p {
+        font-size: 16px;
+    }
+    
+    .banner-content .btn {
+        font-size: 14px;
+    }
+}
+
+/* Add more media queries as needed */
